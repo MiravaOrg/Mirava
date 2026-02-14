@@ -91,17 +91,17 @@ This script verifies whether the mirrors defined in `mirrors_list.yaml` are actu
 
 ---
 
-## How to Add a New Mirror
+## How to Contributing to Mirava
 
-If you know a reliable mirror (especially inside Iran and accessible without a VPN), we’d be happy to include it.
+If you know a reliable mirror (especially one located inside Iran and accessible without a VPN), we’d love to include it.
 
-### Steps
+Before getting started, please read our contribution guidelines:
 
-1. Fork the repository
-2. Add your mirror details to `mirrors_list.yaml`
-3. If available, add sync scripts (e.g., `rsync` or `wget`) under `scripts/`
-4. Test it locally
-5. Open a Pull Request for review
+See [Contributing](https://github.com/MiravaOrg/Mirava/blob/main/CONTRIBUTING.md)
+
+Thanks for helping improve the project!
+
+---
 
 ### What Mirrors Are Useful?
 
@@ -114,11 +114,9 @@ If you know a reliable mirror (especially inside Iran and accessible without a V
 
 ## 📢 Contact Info 
 
-- 🔗 [Twitter](https://x.com/geedook13)
-- 📣 [Telegram Channel](https://t.me/shayangeedook)
-- 📣 [Linkedin](https://www.linkedin.com/in/shayan-kahangi-282abb334/)
-- 🔗 [Blog](https://geedook.github.io/Binary-Being/)
-- 🔗 [Email](geedook13@gmail.com)
+- 🔗 [X (twitter)](https://x.com/miravaorg)
+- 📣 [Telegram Channel](https://t.me/miravaorg)
+- 🔗 [Email](Miravaorg@proton.me)
 
 ---
 
