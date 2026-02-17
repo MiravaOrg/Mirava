@@ -37,44 +37,46 @@ This repository maintains an up-to-date list of trusted domestic mirrors for wid
 
 | Mirror (Link) | Description | Covered Packages |
 |--------------|-------------|------------------|
-| [mirror.shatel.ir](https://mirror.shatel.ir) | Ubuntu mirror | Ubuntu, Debian, Kali repositories and installers |
-| [mirrors.kubarcloud.com](https://mirrors.kubarcloud.com) | Kubar internal mirror with support | Linux kernel sources and various open-source archives |
-| [repo-portal.ito.gov.ir](https://repo-portal.ito.gov.ir/repo) | Maintained by Iran Information Technology Organization | YUM/DNF (CentOS, Fedora, Rocky), Python, npm, Yarn, and more |
+| [shatel.ir](https://mirror.shatel.ir) | Ubuntu mirror | Ubuntu, Debian, Kali repositories and installers |
+| [kubarcloud.com](https://mirrors.kubarcloud.com) | Kubar internal mirror with support | Linux kernel sources and various open-source archives |
+| [repo-portal.ito.gov.ir](https://repo-portal.ito.gov.ir/repo) | Maintained by Iran Information Technology Organization | CentOS, Fedora, Rocky, Python, npm, Yarn, and more |
 | [jamko.ir](https://jamko.ir) | Documentation and config examples | Maven, Gradle, Android SDK, APT, RPM, NuGet, Yarn, Composer, pip |
-| [runflare.com/mirrors](https://runflare.com/mirrors) | Daily auto-updated with simple guides | Composer/Packagist, PyPI, npm, Node.js |
+| [runflare.com](https://runflare.com/mirrors) | Daily auto-updated with simple guides | Composer/Packagist, PyPI, npm, Node.js |
 | [hub.hamdocker.ir](https://hub.hamdocker.ir) | Docker registry | Docker Registry |
 | [repo.iut.ac.ir](https://repo.iut.ac.ir) | Comprehensive mirror by Isfahan University of Technology | Debian, Ubuntu, Mint, Arch, Manjaro, Alpine, Rocky, Fedora, OpenSUSE, OpenBSD, CTAN |
 | [maven.myket.ir](https://maven.myket.ir) | Android-focused Maven mirror | Maven Central, Google Maven, JitPack |
-| [arvancloud.ir/dev/linux-repository](https://www.arvancloud.ir/en/dev/linux-repository) | High-speed mirrors hosted on ArvanCloud | Debian, Ubuntu, CentOS, Alpine, Arch, OpenSUSE, Manjaro |
-| [mirror.iranserver.com](https://mirror.iranserver.com) | High-speed mirrors by IranServer | Debian, Ubuntu, CentOS |
+| [arvancloud.ir](https://www.arvancloud.ir/en/dev/linux-repository) | High-speed mirrors hosted on ArvanCloud | Debian, Ubuntu, CentOS, Alpine, Arch, OpenSUSE, Manjaro |
+| [iranserver.com](https://mirror.iranserver.com) | High-speed mirrors by IranServer | Debian, Ubuntu, CentOS |
 | [docker.mobinhost.com](https://docker.mobinhost.com) | Docker registry | Docker Registry |
-| [mirror.mobinhost.com](https://mirror.mobinhost.com) | Comprehensive GNU/Linux mirrors | FreeBSD, AlmaLinux, Alpine, Arch, Debian, EPEL, Manjaro, MariaDB, MongoDB, Ubuntu, Zabbix |
-| [arvancloud.ir/fa/dev/docker](https://www.arvancloud.ir/fa/dev/docker) | Docker mirror | Docker Registry |
+| [mobinhost.com](https://mirror.mobinhost.com) | Comprehensive GNU/Linux mirrors | FreeBSD, AlmaLinux, Alpine, Arch, Debian, EPEL, Manjaro, MariaDB, MongoDB, Ubuntu, Zabbix |
+| [arvancloud.ir](https://www.arvancloud.ir/fa/dev/docker) | Docker mirror | Docker Registry |
 | [focker.ir](https://focker.ir) | Docker mirror | Docker Registry |
 | [en-mirror.ir](https://en-mirror.ir) | Gradle and Android libraries mirror | Google, Maven Central, JitPack |
 | [docker.kernel.ir](https://docker.kernel.ir) | Docker registry | Docker Registry |
 | [terraform.peaker.info](https://terraform.peaker.info) | Official Terraform proxy | Terraform |
-| [mirror.afranet.com](http://mirror.afranet.com) | GNU/Linux distributions mirror | Debian, Ubuntu, CentOS |
+| [afranet.com](http://mirror.afranet.com) | GNU/Linux distributions mirror | Debian, Ubuntu, CentOS |
 | [ubuntu.pishgaman.net](https://ubuntu.pishgaman.net) | Ubuntu mirror | Ubuntu |
-| [mirrors.pardisco.co](https://mirrors.pardisco.co) | GNU/Linux & programming package mirrors | Ubuntu, Debian, Alpine, PyPI, NPM, Go, NuGet, Docker, OmniOS |
+| [pardisco.co](https://mirrors.pardisco.co) | GNU/Linux & programming package mirrors | Ubuntu, Debian, Alpine, PyPI, NPM, Go, NuGet, Docker, OmniOS |
 | [cran.um.ac.ir](https://cran.um.ac.ir) | R packages mirror | CRAN |
 | [ir.archive.ubuntu.com](https://ir.archive.ubuntu.com/ubuntu) | Official Ubuntu mirror | Ubuntu |
-| [mirror.0-1.cloud](https://mirror.0-1.cloud) | Multi-distribution mirror | AlmaLinux, Alpine, Arch, Debian, Fedora, FreeBSD, Ubuntu, Windows |
-| [mirror.manageit.ir](http://mirror.manageit.ir/ubuntu) | Ubuntu mirror | Ubuntu |
-| [mirror.aminidc.com](http://mirror.aminidc.com) | GNU/Linux & Windows Server mirrors | Debian, RHEL, Rocky, Ubuntu, Windows Server |
-| [ubuntu-mirror.kimiahost.com](https://ubuntu-mirror.kimiahost.com) | Ubuntu mirror | Ubuntu |
-| [mirror.digitalvps.ir](https://mirror.digitalvps.ir/ubuntu) | Ubuntu mirror | Ubuntu |
+| [0-1.cloud](https://mirror.0-1.cloud) | Multi-distribution mirror | AlmaLinux, Alpine, Arch, Debian, Fedora, FreeBSD, Ubuntu, Windows |
+| [manageit.ir](http://mirror.manageit.ir/ubuntu) | Ubuntu mirror | Ubuntu |
+| [aminidc.com](http://mirror.aminidc.com) | GNU/Linux & Windows Server mirrors | Debian, RHEL, Rocky, Ubuntu, Windows Server |
+| [kimiahost.com](https://ubuntu-mirror.kimiahost.com) | Ubuntu mirror | Ubuntu |
+| [digitalvps.ir](https://mirror.digitalvps.ir/ubuntu) | Ubuntu mirror | Ubuntu |
 | [ir.ubuntu.sindad.cloud](https://ir.ubuntu.sindad.cloud) | Ubuntu mirror | Ubuntu |
 | [ir.centos.sindad.cloud](https://ir.centos.sindad.cloud) | CentOS mirror | CentOS |
 | [ir.epel.sindad.cloud](https://ir.epel.sindad.cloud) | EPEL mirror | EPEL |
-| [mirror.faraso.org](http://mirror.faraso.org) | CentOS, EPEL, Java & Chrome packages | CentOS, EPEL, Java Runtime, Java Dev |
+| [faraso.org](http://mirror.faraso.org) | CentOS, EPEL, Java & Chrome packages | CentOS, EPEL, Java Runtime, Java Dev |
 | [chat.shhh.ir](https://chat.shhh.ir/dl) | DeltaChat mirror | DeltaChat |
-| [mirror.atlantiscloud.ir](https://mirror.atlantiscloud.ir/) | Docker, Ubuntu, and NPM mirrors | Ubuntu, Docker Registry, NPM |
+| [atlantiscloud.ir](https://mirror.atlantiscloud.ir/) | Docker, Ubuntu, and NPM mirrors | Ubuntu, Docker Registry, NPM |
 | [iran.chabokan.net](https://iran.chabokan.net/) | Programming package services | NPM, Python, PHP, Docker, NuGet |
 | [repo.abrha.net](https://repo.abrha.net/) | GNU/Linux OS mirrors | Ubuntu, AlmaLinux, Debian, EPEL, Proxmox |
-| [mirror.parsdev.com](https://mirror.parsdev.com/) | GNU/Linux distributions mirror | Ubuntu, AlmaLinux, Debian |
+| [parsdev.com](https://mirror.parsdev.com/) | GNU/Linux distributions mirror | Ubuntu, AlmaLinux, Debian |
 | [linuxmirrors.ir](https://linuxmirrors.ir/) | GNU/Linux distributions mirror | Debian, Ubuntu, Fedora, Rocky, Oracle Linux |
-
+| [kargadan.ir](https://mirror.kargadan.ir/) | High-Speed Package Mirror for Iranian Developers | NuGet, PyPI, Yarn, Docker Registry, MCR, Maven/Gradle, Go Proxy, Composer,
+| [hyperclouds.ir](https://mirrors.hyperclouds.ir/) | Hyperclouds Mirrors | Cargo, Ubuntu, Alpine, Debian, RubyGems, Go Proxy, PyPI, Docker Registry |
+| [gitdl.theazizi.ir](https://gitdl.theazizi.ir) | A tool designed to bypass GitHub download restrictions for releases and source code | Simple GitHub release proxy  |
 ---
 
 ## 🌍 Global & Official Mirrors
@@ -86,12 +88,12 @@ The following mirrors are well-known, actively maintained, and widely used withi
 
 | Mirror / Country | URL | Description | Covered Packages |
 | ---------------- | --- | ----------- | ---------------- |
-| NYIST Mirror (China) | [mirror.nyist.edu.cn](https://mirror.nyist.edu.cn/) | University-operated open-source mirror providing a wide range of Linux distributions and language package repositories. | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Linux Mint, PyPI, CRAN, CPAN, RubyGems and more |
-| NJU Mirror (China) | [mirror.nju.edu.cn](https://mirror.nju.edu.cn/) | Nanjing University official mirror site serving major Linux distributions and development ecosystems. | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Manjaro, Gentoo, PyPI and more |
-| Huawei Cloud  Mirror (China) | [mirror.huaweicloud.com](https://mirrors.huaweicloud.com/home) | Enterprise-grade mirror service operated by Huawei Cloud with CDN acceleration and global accessibility. | Debian, Ubuntu, CentOS Stream, Fedora, Arch Linux, Alpine, openEuler, PyPI, Maven, Docker, Kubernetes and more |
-| USTC Open Source Mirror (China) | [mirrors.ustc.edu.cn](https://mirrors.ustc.edu.cn/) | University of Science and Technology of China (USTC) mirror — one of the most established and comprehensive open-source mirror networks in Asia. | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Manjaro, PyPI, CRAN, Homebrew and more |
-| Yandex Mirror (Russia) | [mirror.yandex.ru](https://mirror.yandex.ru/) | High-speed Russian mirror operated by Yandex providing major Linux distributions and open-source repositories. | Debian, Ubuntu, CentOS, Fedora, Arch Linux and more |
-| Tsinghua University Mirror (China) | [mirrors.tuna.tsinghua.edu.cn](https://mirrors.tuna.tsinghua.edu.cn/) | TUNA (Tsinghua University Network Association) mirror — one of the most popular and comprehensive mirrors in China. | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Manjaro, PyPI, Homebrew, Docker and more |
+| NYIST Mirror (China) | [nyist.edu.cn](https://mirror.nyist.edu.cn/) | University-operated open-source mirror providing a wide range of Linux distributions and language package repositories | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Linux Mint, PyPI, CRAN, CPAN, RubyGems and more |
+| NJU Mirror (China) | [nju.edu.cn](https://mirror.nju.edu.cn/) | Nanjing University official mirror site serving major Linux distributions and development ecosystems | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Manjaro, Gentoo, PyPI and more |
+| Huawei Cloud  Mirror (China) | [huaweicloud.com](https://mirrors.huaweicloud.com/home) | Enterprise-grade mirror service operated by Huawei Cloud with CDN acceleration and global accessibility. | Debian, Ubuntu, CentOS Stream, Fedora, Arch Linux, Alpine, openEuler, PyPI, Maven, Docker, Kubernetes and more |
+| USTC Mirror (China) | [ustc.edu.cn](https://mirrors.ustc.edu.cn/) | University of Science and Technology of China (USTC) mirror | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Manjaro, PyPI, CRAN, Homebrew and more |
+| Yandex Mirror (Russia) | [yandex.ru](https://mirror.yandex.ru/) | High-speed Russian mirror operated by Yandex providing major Linux distributions and open-source repositories | Debian, Ubuntu, CentOS, Fedora, Arch Linux and more |
+| Tsinghua University Mirror (China) | [tuna.tsinghua.edu.cn](https://mirrors.tuna.tsinghua.edu.cn/) | TUNA (Tsinghua University Network Association) mirror | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Manjaro, PyPI, Homebrew, Docker and more |
 
 ---
 
