@@ -101,6 +101,14 @@ The following mirrors are well-known, actively maintained, and widely used withi
 
 This script verifies whether the mirrors defined in `mirrors_list.yaml` are actually reachable, especially under Iranian network conditions.
 
+### Quick Run
+
+You can run the script directly without cloning the repository:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/MiravaOrg/Mirava/refs/heads/main/check_mirrors.sh | bash
+```
+
 ### Features
 
 - Parallel execution for faster checks

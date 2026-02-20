@@ -4,9 +4,17 @@ set -euo pipefail
 MIRROR_FILE="./mirrors_list.yaml"
 MIRROR_URL="https://raw.githubusercontent.com/MiravaOrg/Mirava/refs/heads/main/mirrors_list.yaml"
 
+# Check if curl is installed
+if ! command -v curl &> /dev/null; then
+  echo "❌ Error: curl is not installed."
+  echo "Please install curl first."
+  exit 1
+fi
+
 # Check if yq is installed
 if ! command -v yq &> /dev/null; then
   echo "❌ Error: yq is not installed."
+  echo "Please install yq from: https://github.com/mikefarah/yq/"
   exit 1
 fi
 
