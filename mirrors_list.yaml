@@ -117,6 +117,26 @@ mirrors:
     packages:
       - Docker Registry
 
+  - name: Liara
+    url: https://liara.ir/mirrors
+    description: Mirrors for Linux distributions, programming packages, and Docker images hosted by Liara in Iran.
+    packages:
+      - Debian
+      - Ubuntu
+      - CentOS
+      - Fedora
+      - Rocky
+      - Alpine
+      - OpenSUSE
+      - Arch Linux
+      - Manjaro
+      - PyPI
+      - npm
+      - Go
+      - NuGet
+      - Composer
+      - Docker Registry
+
   - name: MobinHost Full
     url: https://mirror.mobinhost.com
     description: Comprehensive GNU/Linux and database mirrors.

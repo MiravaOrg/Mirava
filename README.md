@@ -51,6 +51,7 @@ This repository maintains an up-to-date list of trusted domestic mirrors for wid
 | [mobinhost.com](https://mirror.mobinhost.com) | Comprehensive GNU/Linux mirrors | FreeBSD, AlmaLinux, Alpine, Arch, Debian, EPEL, Manjaro, MariaDB, MongoDB, Ubuntu, Zabbix |
 | [arvancloud.ir](https://www.arvancloud.ir/fa/dev/docker) | Docker mirror | Docker Registry |
 | [focker.ir](https://focker.ir) | Docker mirror | Docker Registry |
+| [liara.ir](https://liara.ir/mirrors) | Mirrors with documentation and config examples | Linux distributions, programming packages, and Docker images |
 | [en-mirror.ir](https://en-mirror.ir) | Gradle and Android libraries mirror | Google, Maven Central, JitPack |
 | [docker.kernel.ir](https://docker.kernel.ir) | Docker registry | Docker Registry |
 | [terraform.peaker.info](https://terraform.peaker.info) | Official Terraform proxy | Terraform |
