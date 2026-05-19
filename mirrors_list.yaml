@@ -371,3 +371,38 @@ mirrors:
       - Rocky Linux
       - Kali
       - TorProject
+
+  - name: MIT
+    url: https://mirrors.mit.edu
+    description: MIT high speed and low ping mirror
+    packages:
+    - ArchLinux
+    - CentOS
+    - CPAN
+    - CTAN
+    - Cygwin
+    - Debian
+    - Debian backports
+    - Fedora
+    - Fedora EPEL
+    - Finnix
+    - FreeBSD
+    - Gentoo
+    - Gentoo Portage
+    - KDE
+    - Kernel
+    - Kodi (formerly XBMC)
+    - Libreboot
+    - NetBSD
+    - OSMC
+    - OpenBSD
+    - Parrot Security OS
+    - Raspbian
+    - Sage
+    - sugarlabs
+    - Tails
+    - Tor Project
+    - Ubuntu
+    - Ubuntu CD images
+    - Ubuntu releases
+    - Ubuntu ports
