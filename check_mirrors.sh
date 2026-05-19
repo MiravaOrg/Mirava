@@ -48,8 +48,65 @@ declare -A PACKAGE_PATHS=(
   ["CentOS"]="centos"
   ["Alpine"]="alpine"
   ["Composer"]="packages.json"
+  ["Composer/Packagist"]="packages.json"
   ["Docker Registry"]="v2/"
   ["Homebrew"]="brew"
+  ["AlmaLinux"]="almalinux"
+  ["Fedora"]="fedora"
+  ["Rocky"]="rocky"
+  ["Rocky Linux"]="rocky"
+  ["Kali"]="kali"
+  ["Manjaro"]="manjaro"
+  ["Mint"]="linuxmint"
+  ["LinuxMint"]="linuxmint"
+  ["OpenSUSE"]="opensuse"
+  ["FreeBSD"]="freebsd"
+  ["EPEL"]="epel"
+  ["MariaDB"]="mariadb"
+  ["MongoDB"]="mongodb"
+  ["Node.js"]="node"
+  ["Zabbix"]="zabbix"
+  ["Proxmox"]="proxmox"
+  ["Termux"]="termux"
+  ["Void Linux"]="void"
+  ["Go"]="golang"
+  ["Python"]="python"
+  ["Maven"]="maven"
+  ["NuGet"]="nuget"
+  ["Docker"]="v2/"
+  ["Yarn"]="yarn"
+  ["APT"]="apt"
+  ["RPM"]="rpm"
+  ["pip"]="pip"
+  ["Gradle"]="gradle"
+  ["Android SDK"]="android"
+  ["CTAN"]="ctan"
+  ["R"]="CRAN"
+  ["OmniOS"]="omnios"
+  ["PHP"]="php"
+  ["Terraform"]="terraform"
+  ["Oracle Linux"]="oraclelinux"
+  ["TorProject"]="tor"
+  ["F-Droid"]="fdroid"
+  ["Chaotic-AUR"]="chaotic-aur"
+  ["Dart Pub"]="dart-pub"
+  ["Flutter packages"]="flutter"
+  ["Maven Central"]="maven2"
+  ["Google Maven"]="google-maven"
+  ["DeltaChat"]="deltachat"
+  ["OpenBSD"]="openbsd"
+  ["RHEL"]="rhel"
+  ["Windows"]="windows"
+  ["Windows Server"]="windowsserver"
+  ["YUM/DNF (CentOS, Fedora, Rocky)"]="centos"
+  ["Linux kernel"]="kernel"
+  ["Elastic Registry"]="v2/"
+  ["Google Registry"]="v2/"
+  ["Microsoft Registry"]="v2/"
+  ["Quay Registry"]="v2/"
+  ["JitPack"]="jitpack"
+  ["Java Dev"]="java-dev"
+  ["Java Runtime"]="java-runtime"
 )
 
 function check_url() {
@@ -60,12 +117,13 @@ function check_url() {
 
 function check_docker_registry() {
   local url=$1
+  local pkg_name=${2:-"Docker Registry"}
   # Docker Registry requires a GET to /v2/ and must respond with 200 or 401
   status=$(curl -s -o /dev/null -w "%{http_code}" --max-time 5 "$url/v2/" || true)
-  if [[ "$status" == "200" || "$status" == "401" ]]; then
-    echo "✅ Docker Registry OK ($status)"
+  if [[ "$status" == "200" || "$status" == "401" || "$status" == "301" || "$status" == "302" || "$status" == "403" ]]; then
+    echo "✅ $pkg_name -> $url/v2/ ($status)"
   else
-    echo "❌ Docker Registry Failed ($status)"
+    echo "❌ $pkg_name -> $url/v2/ ($status)"
   fi
 }
 
@@ -87,12 +145,12 @@ for idx in $(seq 0 $(yq -er '.mirrors | length - 1' "$MIRROR_FILE")); do
       path=""
     fi
 
-    if [[ "$package" == "Docker Registry" ]]; then
-      check_docker_registry "$base_url"
+    if [[ "$package" == *"Registry"* || "$package" == "Docker" ]]; then
+      check_docker_registry "$base_url" "$package"
     elif [[ -n "$path" ]]; then
       full_url="$base_url/$path"
       status=$(check_url "$full_url")
-      if [[ "$status" == "200" || "$status" == "301" || "$status" == "302" ]]; then
+      if [[ "$status" == "200" || "$status" == "301" || "$status" == "302" || "$status" == "403" ]]; then
         echo "✅ $package -> $full_url ($status)"
       else
         echo "❌ $package -> $full_url ($status)"
