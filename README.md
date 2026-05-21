@@ -3,6 +3,17 @@
 >  Mirava is a curated list of Iranian package mirrors, providing reliable and fast access to essential software resources within Iran. 
 <div align="left">
 
+## 📋 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Project Features](#project-features)
+- [Official Mirrors in Iran](#official-mirrors-in-iran)
+- [Global & Official Mirrors](#-global--official-mirrors)
+- [About check_mirrors.sh](#-about-check_mirrorssh)
+- [How to Contribute](#how-to-contribute-to-mirava)
+- [Contact Info](#-contact-info)
+
+
 ## 🌐 Languages / زبان‌ها
 
 [**فارسی / Persian**](README.fa.md)
