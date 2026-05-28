@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MIRROR_FILE="./mirrors_list.yaml"
+if [[ -f ./mirrors_list.yaml ]]; then
+	MIRROR_FILE="./mirrors_list.yaml"
+else
+	MIRROR_FILE="/usr/share/mirava/mirrors_list.yaml"
+fi
+
 MIRROR_URL="https://raw.githubusercontent.com/MiravaOrg/Mirava/refs/heads/main/mirrors_list.yaml"
 
 function check_dependency() {
