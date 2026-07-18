@@ -92,6 +92,10 @@ This repository maintains an up-to-date list of trusted domestic mirrors for wid
 | [alldriver.ir](https://www.alldriver.ir) | A large repository for downloading hardware drivers (printers, GPUs, modems, and more) | Driver archive / mirror |
 | [llm.targoman.ir](https://llm.targoman.ir/shares) | A multi-purpose mirror hosting datasets, LLM resources, software packages, ISO files, security tools, and development resources | Data & software mirror hub |
 | [IranGit](https://scorpian.ir/) | A fast, modern, and powerful platform for searching, viewing, and downloading GitHub repositories with a professional, fully Persian user interface | GitHub Mirror |
+| [Asiatech](https://mirror.10.ir.cdn.ir/) | Repository docker-images-group | Docker Registry |
+| [Parmin](https://parmin.cloud/mirrors.html) | Maintained by Parmin | GitHub Mirror, Quay Registry, Docker Registry, GitLab Registry, NVIDIA Container Registry, Kubernetes Registry, Microsoft Registry, NPM, Go Proxy, Nuget, Composer, PyPI, Hugging Face |
+
+
 
 ---
 
@@ -110,6 +114,7 @@ The following mirrors are well-known, actively maintained, and widely used withi
 | USTC Mirror (China) | [ustc.edu.cn](https://mirrors.ustc.edu.cn/) | University of Science and Technology of China (USTC) mirror | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Manjaro, PyPI, CRAN, Homebrew and more |
 | Yandex Mirror (Russia) | [yandex.ru](https://mirror.yandex.ru/) | High-speed Russian mirror operated by Yandex providing major Linux distributions and open-source repositories | Debian, Ubuntu, CentOS, Fedora, Arch Linux and more |
 | Tsinghua University Mirror (China) | [tuna.tsinghua.edu.cn](https://mirrors.tuna.tsinghua.edu.cn/) | TUNA (Tsinghua University Network Association) mirror | Debian, Ubuntu, CentOS, Fedora, Arch Linux, Alpine, openSUSE, Kali, Manjaro, PyPI, Homebrew, Docker and more |
+| Tsinghua University TUNA Association (China) | [bfsu.edu.cn](https://mirrors.bfsu.edu.cn/) | TUNA (Tsinghua University Network Association) mirror | Slackware, Gentoo, Garuda, Deepin, Arch Linuxcn, NetBSD, Blackarch, MX Linux, Prometheus, PuTTY, QEMU, Zabbix and more |
 | Tsinghua University TUNA Association (China) | [bfsu.edu.cn](https://mirrors.bfsu.edu.cn/) | TUNA (Tsinghua University Network Association) mirror | Slackware, Gentoo, Garuda, Deepin, Arch Linuxcn, NetBSD, Blackarch, MX Linux, Prometheus, PuTTY, QEMU, Zabbix and more |
 
 
