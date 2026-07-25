@@ -492,3 +492,29 @@ mirrors:
       - Ubuntu
       - Docker Registry
       - Alpine
+
+  - name: ArvanCloud Consolidated Mirror
+    url: https://mirror.arvancloud.ir
+    description: Consolidated high-speed mirror by ArvanCloud, Iran's major cloud/CDN provider, serving Linux distributions and container images.
+    packages:
+      - Ubuntu
+      - Debian
+      - CentOS
+      - Arch Linux
+      - Alpine
+      - Manjaro
+      - OpenSUSE
+      - Docker Registry
+
+  - name: Sefroyek Pardaz (.ir)
+    url: https://mirror.0-1.ir
+    description: 100GE high-speed mirror with 120TB storage in Tehran DC, IPv6 and speedtest available (.ir TLD).
+    packages:
+      - Ubuntu
+      - Debian
+      - CentOS
+      - Arch Linux
+      - Alpine
+      - Fedora
+      - FreeBSD
+      - EPEL
