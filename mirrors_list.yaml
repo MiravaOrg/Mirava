@@ -7,16 +7,6 @@ mirrors:
       - Debian
       - Kali
 
-  - name: KubarCloud
-    url: https://mirrors.kubarcloud.com
-    description: Kubar internal mirror with support for Linux kernel sources and various archives.
-    packages:
-      - Linux kernel
-      - Debian
-      - Ubuntu
-      - Alpine
-      - Arch Linux
-
   - name: ITO (Information Technology Organization)
     url: https://repo-portal.ito.gov.ir/repo
     description: Maintained by Iran Information Technology Organization, supporting multiple package types.
@@ -173,12 +163,6 @@ mirrors:
       - Maven Central
       - JitPack
 
-  - name: Terraform Peaker
-    url: https://terraform.peaker.info
-    description: Official Terraform proxy in Iran.
-    packages:
-      - Terraform
-
   - name: Afranet
     url: http://mirror.afranet.com
     description: GNU/Linux distributions mirror.
@@ -231,12 +215,6 @@ mirrors:
       - FreeBSD
       - Ubuntu
       - Windows
-
-  - name: ManageIT Ubuntu
-    url: http://mirror.manageit.ir/ubuntu
-    description: Ubuntu mirror.
-    packages:
-      - Ubuntu
 
   - name: Aminidc
     url: http://mirror.aminidc.com
@@ -348,13 +326,6 @@ mirrors:
     packages:
       - Maven Central
 
-  - name: PubYar
-    url: https://pub.pubyar.ir
-    description: Smart read-only Dart Pub and Flutter package mirror/CDN for Iranian developers.
-    packages:
-      - Dart Pub
-      - Flutter packages
-
   - name: FreeDif
     url: https://mirror.freedif.org/
     description: High-speed open-source mirror based in Singapore with a 10GBPS connection, dedicated to supporting the community.
@@ -443,13 +414,6 @@ mirrors:
       - Node.js
       - Python
 
-  - name: Hakimi-Soft
-    url: https://iranmirror.hakimi-soft.ir
-    description: General-purpose open-source mirror.
-    packages:
-      - Ubuntu
-      - Debian
-
   - name: Parmin
     url: https://parmin.cloud/mirrors.html
     description: Maintained by Parmin, providing mirrors for container registries, language packages, and AI model hubs.
@@ -460,19 +424,6 @@ mirrors:
       - NuGet
       - Composer
       - PyPI
-
-  - name: ArvanCloud Consolidated Mirror
-    url: https://mirror.arvancloud.ir
-    description: Consolidated high-speed mirror by ArvanCloud, Iran's major cloud/CDN provider, serving Linux distributions and container images.
-    packages:
-      - Ubuntu
-      - Debian
-      - CentOS
-      - Arch Linux
-      - Alpine
-      - Manjaro
-      - OpenSUSE
-      - Docker Registry
 
   - name: Petiak Ubuntu
     url: https://archive.ubuntu.petiak.ir
@@ -486,27 +437,9 @@ mirrors:
     packages:
       - Ubuntu
 
-  - name: Asiatech Ubuntu
-    url: https://archive.ubuntu.asiatech.ir
-    description: Ubuntu mirror hosted by Asiatech, a major Iranian CDN/cloud provider.
-    packages:
-      - Ubuntu
-
-  - name: Hostiran Ubuntu
-    url: https://ubuntu.hostiran.ir
-    description: Ubuntu archive and CD image mirror hosted by Hostiran.
-    packages:
-      - Ubuntu
-
   - name: Pars.host Ubuntu
     url: https://ubuntu.pars.host
     description: Ubuntu mirror hosted by Pars.host.
-    packages:
-      - Ubuntu
-
-  - name: Zagrio Ubuntu
-    url: https://archive.ubuntu.mirrors.zagrio.net
-    description: Ubuntu mirror hosted by Zagrio.
     packages:
       - Ubuntu
 
@@ -534,12 +467,6 @@ mirrors:
     packages:
       - Docker Registry
 
-  - name: HaioCloud Docker
-    url: https://docker.haiocloud.com
-    description: Docker registry mirror hosted by HaioCloud.
-    packages:
-      - Docker Registry
-
   - name: ParsPack Docker
     url: https://registry.docker.ir
     description: Docker registry mirror operated by ParsPack.
@@ -551,14 +478,6 @@ mirrors:
     description: Docker registry mirror hosted by Runflare.
     packages:
       - Docker Registry
-
-  - name: Docker Registry IR
-    url: https://docker-registry.ir
-    description: Multi-purpose mirror providing Docker, PyPI, and Arch Linux packages.
-    packages:
-      - Docker Registry
-      - PyPI
-      - Arch Linux
 
   - name: Kernel.ir Docker
     url: https://docker.kernel.ir
