@@ -7,16 +7,6 @@ mirrors:
       - Debian
       - Kali
 
-  - name: KubarCloud
-    url: https://mirrors.kubarcloud.com
-    description: Kubar internal mirror with support for Linux kernel sources and various archives.
-    packages:
-      - Linux kernel
-      - Debian
-      - Ubuntu
-      - Alpine
-      - Arch Linux
-
   - name: ITO (Information Technology Organization)
     url: https://repo-portal.ito.gov.ir/repo
     description: Maintained by Iran Information Technology Organization, supporting multiple package types.
@@ -173,12 +163,6 @@ mirrors:
       - Maven Central
       - JitPack
 
-  - name: Terraform Peaker
-    url: https://terraform.peaker.info
-    description: Official Terraform proxy in Iran.
-    packages:
-      - Terraform
-
   - name: Afranet
     url: http://mirror.afranet.com
     description: GNU/Linux distributions mirror.
@@ -231,12 +215,6 @@ mirrors:
       - FreeBSD
       - Ubuntu
       - Windows
-
-  - name: ManageIT Ubuntu
-    url: http://mirror.manageit.ir/ubuntu
-    description: Ubuntu mirror.
-    packages:
-      - Ubuntu
 
   - name: Aminidc
     url: http://mirror.aminidc.com
@@ -295,21 +273,24 @@ mirrors:
 
   - name: AtlantisCloud
     url: https://mirror.atlantiscloud.ir
-    description: Docker, Ubuntu, and NPM mirrors.
+    description: Docker, Debian, Ubuntu, and NPM mirrors.
     packages:
-      - Ubuntu
       - Docker Registry
       - npm
+      - Ubuntu
+      - Debian
 
   - name: Chabokan
-    url: https://iran.chabokan.net
-    description: Programming package services mirror.
+    url: https://mirror2.chabokan.net
+    description: Multi-language package registry and Linux distribution mirrors hosted by Chabokan.
     packages:
+      - PyPI
       - npm
-      - Python
-      - PHP
-      - Docker
+      - Docker Registry
+      - Composer
       - NuGet
+      - Ubuntu
+      - Debian
 
   - name: Abrha
     url: https://repo.abrha.net
@@ -345,13 +326,6 @@ mirrors:
     packages:
       - Maven Central
 
-  - name: PubYar
-    url: https://pub.pubyar.ir
-    description: Smart read-only Dart Pub and Flutter package mirror/CDN for Iranian developers.
-    packages:
-      - Dart Pub
-      - Flutter packages
-      
   - name: FreeDif
     url: https://mirror.freedif.org/
     description: High-speed open-source mirror based in Singapore with a 10GBPS connection, dedicated to supporting the community.
@@ -376,33 +350,171 @@ mirrors:
     url: https://mirrors.mit.edu
     description: MIT high speed and low ping mirror
     packages:
-    - ArchLinux
-    - CentOS
-    - CPAN
-    - CTAN
-    - Cygwin
-    - Debian
-    - Debian backports
-    - Fedora
-    - Fedora EPEL
-    - Finnix
-    - FreeBSD
-    - Gentoo
-    - Gentoo Portage
-    - KDE
-    - Kernel
-    - Kodi (formerly XBMC)
-    - Libreboot
-    - NetBSD
-    - OSMC
-    - OpenBSD
-    - Parrot Security OS
-    - Raspbian
-    - Sage
-    - sugarlabs
-    - Tails
-    - Tor Project
-    - Ubuntu
-    - Ubuntu CD images
-    - Ubuntu releases
-    - Ubuntu ports
+      - ArchLinux
+      - CentOS
+      - CPAN
+      - CTAN
+      - Cygwin
+      - Debian
+      - Debian backports
+      - Fedora
+      - Fedora EPEL
+      - Finnix
+      - FreeBSD
+      - Gentoo
+      - Gentoo Portage
+      - KDE
+      - Kernel
+      - Kodi (formerly XBMC)
+      - Libreboot
+      - NetBSD
+      - OSMC
+      - OpenBSD
+      - Parrot Security OS
+      - Raspbian
+      - Sage
+      - sugarlabs
+      - Tails
+      - Tor Project
+      - Ubuntu
+      - Ubuntu CD images
+      - Ubuntu releases
+      - Ubuntu ports
+
+  - name: Petiak Debian
+    url: https://archive.debian.petiak.ir
+    description: Official Debian mirror hosted by Petiak.
+    packages:
+      - Debian
+
+  - name: Rasanegar
+    url: https://mirror.rasanegaar.com
+    description: EPEL mirror hosted by Rasanegar.
+    packages:
+      - EPEL
+
+  - name: Kargadan
+    url: https://mirror.kargadan.ir
+    description: High-speed multi-package mirror for Iranian developers covering 24+ Linux distros, language registries, and container images.
+    packages:
+      - NuGet
+      - PyPI
+      - Yarn
+      - Docker Registry
+      - Maven
+      - Go
+      - Composer
+      - Docker
+
+  - name: Alibaba IR
+    url: https://taobao.mirrors.alibaba.ir
+    description: Alibaba Cloud mirror hosted on .ir TLD providing fast access to Node.js, Python, and binary packages.
+    packages:
+      - npm
+      - Node.js
+      - Python
+
+  - name: Parmin
+    url: https://parmin.cloud/mirrors.html
+    description: Maintained by Parmin, providing mirrors for container registries, language packages, and AI model hubs.
+    packages:
+      - Docker Registry
+      - npm
+      - Go
+      - NuGet
+      - Composer
+      - PyPI
+
+  - name: Petiak Ubuntu
+    url: https://archive.ubuntu.petiak.ir
+    description: Ubuntu archive mirror hosted by Petiak in Iran.
+    packages:
+      - Ubuntu
+
+  - name: Dimit Cloud
+    url: https://mirrors.ubuntu.dimit.cloud
+    description: Ubuntu mirror hosted by Dimit.cloud.
+    packages:
+      - Ubuntu
+
+  - name: Pars.host Ubuntu
+    url: https://ubuntu.pars.host
+    description: Ubuntu mirror hosted by Pars.host.
+    packages:
+      - Ubuntu
+
+  - name: Megan Hub
+    url: https://megan.ir/megan-hub
+    description: Docker images and container registry hub hosted by Megan.
+    packages:
+      - Docker Registry
+
+  - name: Roomeet Docker
+    url: https://repo.roomeet.ir
+    description: Docker download mirror hosted by Roomeet.
+    packages:
+      - Docker Registry
+
+  - name: IranServer Docker
+    url: https://docker.iranserver.com
+    description: Docker registry mirror hosted by IranServer.
+    packages:
+      - Docker Registry
+
+  - name: IranRepo Docker
+    url: https://docker.iranrepo.ir
+    description: Docker registry mirror hosted by IranRepo.
+    packages:
+      - Docker Registry
+
+  - name: ParsPack Docker
+    url: https://registry.docker.ir
+    description: Docker registry mirror operated by ParsPack.
+    packages:
+      - Docker Registry
+
+  - name: Runflare Docker
+    url: https://mirror-docker.runflare.com
+    description: Docker registry mirror hosted by Runflare.
+    packages:
+      - Docker Registry
+
+  - name: Kernel.ir Docker
+    url: https://docker.kernel.ir
+    description: Docker registry mirror hosted by Kernel.ir.
+    packages:
+      - Docker Registry
+
+  - name: Liara Linux Mirrors
+    url: https://linux-mirror.liara.ir
+    description: Linux distribution and Docker repository mirrors hosted by Liara.
+    packages:
+      - Ubuntu
+      - Docker Registry
+      - Alpine
+
+  - name: ArvanCloud Consolidated Mirror
+    url: https://mirror.arvancloud.ir
+    description: Consolidated high-speed mirror by ArvanCloud, Iran's major cloud/CDN provider, serving Linux distributions and container images.
+    packages:
+      - Ubuntu
+      - Debian
+      - CentOS
+      - Arch Linux
+      - Alpine
+      - Manjaro
+      - OpenSUSE
+      - Docker Registry
+
+  - name: Sefroyek Pardaz (.ir)
+    url: https://mirror.0-1.ir
+    description: 100GE high-speed mirror with 120TB storage in Tehran DC, IPv6 and speedtest available (.ir TLD).
+    packages:
+      - Ubuntu
+      - Debian
+      - CentOS
+      - Arch Linux
+      - Alpine
+      - Fedora
+      - FreeBSD
+      - EPEL
