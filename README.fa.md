@@ -1,147 +1,119 @@
-<div dir="rtl" align="right">
+# Mirava — راهنمای فارسی
 
-# Mirava
+Mirava مجموعه‌ای از mirrorهای نرم‌افزاری و مخازن بسته است که برای دسترسی سریع و پایدار، به‌خصوص از داخل ایران، نگهداری می‌شود. نسخهٔ انگلیسی `README.md` سند اصلی پروژه است و این فایل راهنمای فارسی قابلیت‌ها و Usage جدید را پوشش می‌دهد.
 
-> لیست Mirror های ارائه‌شده توسط سایت‌های ایرانی
+## 🌐 Languages
 
----
-##  📋 فهرست مطالب
-
-- [معرفی پروژه](#معرفی-پروژه)
-- [بخش‌های پروژه](#بخش-های-پروژه)
-- [میرورهای رسمی داخل ایران](#میرورهای-رسمی-داخل-ایران)
-- [درباره اسکریپت check_mirrors.sh](#-دربارهٔ-اسکریپت-check_mirrorssh)
-- [چطور میرور جدید اضافه کنیم](#چطور-یک-میرور-جدید-به-پروژه-اضافه-کنیم)
-- [شبکه‌های اجتماعی](#-شبکه‌های-اجتماعی)
-- [حمایت مالی](#-حمایت-مالی)
+[**English (Primary)**](README.md) · [**فارسی**](README.fa.md) · [**العربية**](README.ar.md) · [**Русский**](README.ru.md) · [**简体中文**](README.zh-CN.md)
 
 ---
 
-## معرفی پروژه
+## معرفی
 
-یک مجموعه‌ی جامع و سریع از میرورهای عمومی نرم‌افزاری و مخازن بسته‌های نرم‌افزاری داخل کشور ایران است.  
-هدف پروژه میراوا فراهم‌کردن دسترسی آسان، سریع و پایدار به بسته‌های نرم‌افزاری به‌روزشده برای توسعه‌دهندگان، شرکت‌ها و کاربران ایرانی است.
+Mirava مجموعه‌ای از mirrorهای نرم‌افزاری و مخازن بسته است که برای دسترسی سریع و پایدار، به‌خصوص از داخل ایران، نگهداری می‌شود. نسخهٔ انگلیسی `README.md` سند اصلی پروژه است و این فایل راهنمای فارسی قابلیت‌ها و Usage جدید را پوشش می‌دهد.
 
-این پروژه لیستی کامل و به‌روز از میرورهای داخلی بسته‌های نرم‌افزاری معتبر فراهم کرده که در شرایط محدودیت اینترنت بین‌الملل می‌تونه دسترسی سریع، پایداری بالا و ادامه فعالیت بدون قطعی رو ممکن کنه، به‌خصوص در شرایط نت ملی یا قطعی اینترنت خارجی.
+## قابلیت‌های اصلی
 
----
+- تشخیص خودکار توزیع لینوکس و package manager
+- اعتبارسنجی واقعی metadata مخزن قبل از benchmark
+- رتبه‌بندی بر اساس سرعت انتقال و TTFB با workerهای موازی
+- benchmark و مدیریت DNSهای Local و Global
+- backup و rollback برای تغییرات پشتیبانی‌شده
+- Doctor، نمایش backend، نمای سرور/شبکه و CLI غیرتعاملی
+- بدون وابستگی runtime به `yq` یا PyYAML
 
-## بخش های پروژه
+## فهرست Mirror و DNS
 
-- فهرست دقیق و به‌روز میرورهای معتبر داخل ایران
-- اسکریپت Bash برای بررسی وضعیت دسترسی هر میرور
-- امکان همگام‌سازی با ابزارهایی مثل rsync یا wget
-- ساختار دادهٔ سبک و قابل‌توسعه با فرمت YAML
-- بررسی خودکار شبانه (قابل اتصال به CI)
-- قابل استفاده در پروژه‌های دیگر، سیستم‌عامل‌ها، و سرورهای داخلی
+دادهٔ اصلی mirrorها و DNSها در [`mirrors_list.yaml`](mirrors_list.yaml) نگهداری می‌شود. برای جلوگیری از اختلاف بین ترجمه‌ها، جدول کامل mirrorها در README انگلیسی و فایل YAML مرجع باقی می‌ماند.
 
----
+## 🚀 نحوهٔ استفاده
 
-## میرورهای رسمی داخل ایران
-
-| میرور (لینک)                                                                            | توضیحات                                                                                                            | پکیج‌های پوشش داده‌شده                                                                                          |
-| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| [mirror.shatel.ir](https://mirror.shatel.ir)                                            | میرور اوبونتو                                                                                                      | مخازن اوبونتو، دبیان، کالی و فایل‌های نصب‌کننده                                                                 |
-| [mirrors.kubarcloud.com](https://mirrors.kubarcloud.com)                                | میرور داخلی کوبار با پشتیبانی                                                                                      | سورس کرنل لینوکس و آرشیوهای اوپن‌سورس متنوع                                                                     |
-| [repo-portal.ito.gov.ir](https://repo-portal.ito.gov.ir/repo)                           | نگهداری شده توسط سازمان فناوری اطلاعات ایران                                                                       | مخازن YUM/DNF برای CentOS، Fedora، Rocky، مخازن Python، npm، Yarn و …                                           |
-| [jamko.ir](https://jamko.ir)                                                            | ارائه مستندات و نمونه‌های کانفیگ برای استفاده آسان‌تر                                                              | Maven، Gradle، Android SDK، APT، RPM، NuGet، Yarn، Composer، pip                                                |
-| [runflare.com/mirrors](https://runflare.com/mirrors)                                    | دارای راهنمای ساده و آپدیت خودکار روزانه                                                                           | Composer/Packagist، PyPI، npm، Node.js                                                                          |
-| [hub.hamdocker.ir](https://hub.hamdocker.ir)                                            | داکر ریجستری                                                                                                       | Docker Registry                                                                                                 |
-| [repo.iut.ac.ir](https://repo.iut.ac.ir)                                                | میرور جامع دانشگاه صنعتی اصفهان با پوشش گسترده توزیع‌های لینوکسی و پروژه‌های متن‌باز                               | Debian، Ubuntu، Mint، Arch Linux، Manjaro، Raspbian، Alpine، Rocky Linux، Fedora، OpenSUSE، OpenBSD, CTAN       |
-| [maven.myket.ir](https://maven.myket.ir)                                                | میرور جامعی از مخازن کتابخانه های اندرویدی شامل mavenCentral - googleMaven - Jitpack                               | Android sdk - android maven central - android jitpack - android googleMaven                                     |
-| [arvancloud.ir/dev/linux-repository](https://www.arvancloud.ir/en/dev/linux-repository) | میرور داخلی و پرسرعت از ریپازیتوری‌های محبوب‌ترین توزیع‌های گنو/لینوکس بر روی سرورهای ابر آروان                    | Debian, Ubuntu, CentOS, Alpine, Arch Linux, OpenSUSE, Manjaro                                                   |
-| [mirror.iranserver.com](https://mirror.iranserver.com)                                  | میرور های داخلی پر سرعت بر روی سرور های ایران سرور                                                                 | Debian, Ubuntu, CentOS                                                                                          |
-| [docker.mobinhost.com](https://docker.mobinhost.com)                                    | داکر ریجستری                                                                                                       | Docker Registry                                                                                                 |
-| [mirror.mobinhost.com](https://mirror.mobinhost.com)                                    | میرور های داخلی پر سرعت بر روی سرور های مبین هاست                                                                  | FreeBSD, Almalinux, Alpine, Archlinux, Debian, Fedora EPEL, Manjaro, MariaDB, MongoDB, Raspbian, Ubuntu, Zabbix |
-| [arvancloud.ir/fa/dev/docker](https://www.arvancloud.ir/fa/dev/docker)                  | میرور داخلی برای داکر                                                                                              | Docker Registry                                                                                                 |
-| [focker.ir](https://focker.ir)                                                          | میرور داخلی برای داکر                                                                                              | Docker Registry                                                                                                 |
-| [liara.ir](https://liara.ir/mirrors)                                                          | میرور داخلی همراه با مستندات و نمونه کانفیگ                                                                                            | Fedora, Alpine, OpenSUSE, Arch, Manjaro, Centos, Ubuntu, Debian, Rocky, ,PyPI, NPM, Go, Composer, NuGet, Docker images Registry, Quay, Github, Microsoft, K8S                                                                                                 |
-| [en-mirror.ir](https://en-mirror.ir)                                                    | میرور جامعی برای گریدل، متشکل مخازن کتابخانه های اندرویدی شامل Maven Central - Google - Jitpack                    | Google - Maven Central - Jitpack - Others(Can be added)                                                         |
-| [docker.kernel.ir](https://docker.kernel.ir)                                            | داکر رجیستری                                                                                                       | Docker Registry                                                                                                 |
-| [terraform.peaker.info](https://terraform.peaker.info)                                  | پروکسی رسمی Terraform                                                                                              | Terraform Proxy                                                                                                 |
-| [afranet.com](http://mirror.afranet.com)                                                | میرور توزیع های گنو/لینوکس                                                                                         | Debian, Ubuntu, CentOS                                                                                          |
-| [pishgaman.net](https://ubuntu.pishgaman.net)                                           | میرور اوبونتو                                                                                                      | Ubuntu                                                                                                          |
-| [pardisco.co](https://mirrors.pardisco.co)                                              | میرور های جامع گنو/لینوکسی و پکیج های برنامه نویسی                                                                 | Ubuntu, Debian، CentOS, Alpine, PyPI, NPM, Go, NuGet, Docker Registry, OmniOS, PkgSrc                           |
-| [cran.um.ac.ir](https://cran.um.ac.ir)                                                  | میرور پکیچ های R                                                                                                   | CRAN                                                                                                            |
-| [ir.archive.ubuntu.com](https://ir.archive.ubuntu.com/ubuntu)                           | میرور رسمی اوبونتو                                                                                                 | Ubuntu                                                                                                          |
-| [mirror.0-1.cloud](https://mirror.0-1.cloud)                                            | میرور های Almalinux, Alpine, Archlinux, CentOS, Debian, EPEL, FreeBSD, Mangaro, MariaDB, Raspbian, Ubuntu, Windows | Almalinux, Alpine, Archlinux, CentOS, Debian, EPEL, FreeBSD, Mangaro, MariaDB, Raspbian, Ubuntu, Windows        |
-| [mirror.manageit.ir](http://mirror.manageit.ir/ubuntu)                                  | میرور اوبونتو                                                                                                      | Ubuntu                                                                                                          |
-| [mirror.aminidc.com](http://mirror.aminidc.com)                                         | میرور اغلب توزیع های گنو/لینوکسی و ویندوز سرور                                                                     | Almalinux, Debian, EPEL, FIO, HPO,HTML, MINT, RHEL, Rocky, Ubuntu, Windows Server                               |
-| [ubuntu-mirror.kimiahost.com](https://ubuntu-mirror.kimiahost.com)                      | میرور اوبونتو                                                                                                      | Ubuntu                                                                                                          |
-| [mirror.digitalvps.ir](https://mirror.digitalvps.ir/ubuntu)                             | میرور اوبونتو                                                                                                      | Ubuntu                                                                                                          |
-| [ir.ubuntu.sindad.cloud](https://ir.ubuntu.sindad.cloud)                                | میرور اوبونتو                                                                                                      | Ubuntu                                                                                                          |
-| [ir.centos.sindad.cloud](https://ir.centos.sindad.cloud)                                | میرور centos                                                                                                       | Centos                                                                                                          |
-| [ir.epel.sindad.cloud](https://ir.epel.sindad.cloud)                                    | میرور epel                                                                                                         | Epel                                                                                                            |
-| [mirror.faraso.org](http://mirror.faraso.org)                                           | میرور های CentOS, EPEL ,Virtz, Webscript و نرم افزارهای کروم و جاوا                                                | CentOS, EPEL, Virtz, Webscript, Chrom, Java_Runtime, Java Dev, Java_SE8                                         |
-| [chat.shhh.ir](https://chat.shhh.ir/dl)                                                 | میرور دلتاچت                                                                                                       | DeltaChat                                                                                                       |
-| [atlanticscloud.ir](https://mirror.atlantiscloud.ir/)                                   | میرور داکر رجیستری و اوبونتو و NPM                                                                                 | Ubuntu, Docker Registry , NPM                                                                                   |
-| [chabokan.ir](https://iran.chabokan.net/)                                               | میرور سرویس پکیج‌های برنامه‌نویسی                                                                                  | NPM, Python, PHP, Docker, NuGet                                                                                 |
-| [abrha.net](https://repo.abrha.net/)                                                    | میرورهای سیستم عامل گنو/لینوکسی                                                                                    | Ubuntu, Almalinux, Debian, EPEL, ProxMox, Avast, Clamav                                                         |
-| [parsdev.com](https://mirror.parsdev.com/)                                              | میرور توزیع های گنو/لینوکسی                                                                                        | Ubuntu, Almalinux, Debian                                                                                       |
-| [linuxmirrors.ir](https://linuxmirrors.ir/)                                             | میرور توزیع های گنو/لینوکسی                                                                                        | Debian, Ubuntu, Fedora, Rocky, Oracle Linux                                                                     |
-
----
-
-## 🧪 دربارهٔ اسکریپت check_mirrors.sh
-
-این اسکریپت بررسی می‌کنه که آینه‌هایی که در فایل mirrors_list.yaml تعریف شدن، واقعاً در دسترس هستند یا نه، مخصوصاً در شرایط داخل ایران.
-
-### اجرای سریع
-
-می‌تونید اسکریپت رو بدون کلون کردن ریپازیتوری اجرا کنید:
+### اجرای پیشنهادی
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/MiravaOrg/Mirava/refs/heads/main/check_mirrors.sh | bash
+git clone https://github.com/MiravaOrg/Mirava.git
+cd Mirava
+chmod +x check_mirrors.sh
+./check_mirrors.sh
 ```
 
-### ویژگی‌ها:
+اجرای `./check_mirrors.sh` بدون آرگومان در ترمینال، منوی تعاملی را باز می‌کند. در حالت non-interactive بدون آرگومان، اسکریپت به `--check-all` می‌رود.
 
-- اجرای موازی برای افزایش سرعت بررسی
-- گرفتن IP هر میرور با dig یا getent
-- دور زدن مشکلات SSL با --insecure
-- خروجی متنی سازگار با ترمینال‌های فارسی
-- قابل اجرا روی سیستم‌های لینوکسی یا VPS داخل
+### منوی تعاملی
+
+| Key | Action | Description |
+| ---: | --- | --- |
+| `1` | بهینه‌سازی Repository سیستم | توزیع و package manager را تشخیص می‌دهد، mirrorهای سازگار را validate و benchmark می‌کند، رتبه‌بندی می‌کند و پس از تأیید می‌تواند سریع‌ترین گزینهٔ سازگار را اعمال کند. |
+| `2` | پیدا کردن سریع‌ترین mirror/package | نوع package را از لیست انتخاب می‌کنید؛ Mirava candidateها را validate و benchmark می‌کند. اگر همان خانوادهٔ repository سیستم باشد، امکان Apply اختیاری هم ارائه می‌شود. |
+| `3` | بررسی همهٔ mirror/packageها | همهٔ endpointهای ثبت‌شده را موازی بررسی می‌کند و نتیجهٔ reachable/unreachable را همراه progress نشان می‌دهد. |
+| `4` | Benchmark و مدیریت DNS | زیرمنوی Local/Global/All، نمایش DNS فعلی، Apply اختیاری سریع‌ترین pair و Reset تغییرات DNS را باز می‌کند. |
+| `5` | نمایش DNS فعلی | DNSهای فعلی سیستم را فقط نمایش می‌دهد. |
+| `6` | نمای سرور / شبکه | Hostname، RAM/Uptime، OS/Arch، Public IP/Location در صورت دسترسی، DNS، repository فعال و Docker repo را نمایش می‌دهد. |
+| `7` | نمایش Backend تشخیص‌داده‌شده | OS، نسخه، codename، package manager، خانوادهٔ repository و پشتیبانی Auto-Apply را نشان می‌دهد. |
+| `8` | لیست نوع packageها | package/repository typeهای موجود در YAML را فهرست می‌کند. |
+| `9` | Doctor / Data Validation | runtime، Python، backend، دادهٔ YAML و privilege path را بررسی می‌کند. |
+| `0` | خروج | از منو خارج می‌شود. |
+
+### زیرمنوی DNS
+
+| Key | Action |
+| ---: | --- |
+| `1` | سریع‌ترین DNS ایرانی/Local |
+| `2` | سریع‌ترین DNS Global |
+| `3` | سریع‌ترین DNS از همهٔ entryها |
+| `4` | نمایش DNS فعلی |
+| `5` | Reset تغییرات DNS مدیریت‌شده توسط Mirava |
+| `0` | بازگشت |
+
+### CLI مستقیم
+
+```bash
+./check_mirrors.sh --menu
+./check_mirrors.sh --system-repo
+./check_mirrors.sh --apply-system-repo --yes
+./check_mirrors.sh --check-all
+./check_mirrors.sh --fastest Ubuntu
+./check_mirrors.sh --fastest-ubuntu
+./check_mirrors.sh --dns local
+./check_mirrors.sh --dns global
+./check_mirrors.sh --dns all
+./check_mirrors.sh --current-dns
+./check_mirrors.sh --system-info
+./check_mirrors.sh --backend-info
+./check_mirrors.sh --doctor
+./check_mirrors.sh --list-packages
+./check_mirrors.sh --help
+```
+
+## Backendهای پشتیبانی‌شده
+
+Auto-Apply برای Ubuntu/Debian (APT)، Fedora/Rocky/AlmaLinux/CentOS (DNF/YUM)، Arch/Manjaro (Pacman)، Alpine (APK) و openSUSE (Zypper) پیاده‌سازی شده است. روی derivativeهای ناشناخته benchmark ممکن است انجام شود، اما Mirava از بازنویسی خودکار config جلوگیری می‌کند.
+
+## ایمنی
+
+قبل از تغییرات پشتیبانی‌شده backup ساخته می‌شود. اعمال تعاملی نیاز به تأیید دارد و Apply غیرتعاملی repository فقط با `--apply-system-repo --yes` مجاز است. backupها زیر `/var/backups/mirava` ذخیره می‌شوند.
+
+## ✨ تغییرات این نسخه
+
+- منوی تعاملی کامل و اجرای خودکار آن روی TTY
+- Bootstrap وابستگی‌های پایه و حذف نیاز runtime به `yq`/PyYAML
+- Benchmark و validation واقعی repository با speed/TTFB
+- مدیریت و benchmark DNS با Apply/Reset
+- تشخیص چندتوزیعی و backendهای Auto-Apply ایمن
+- System Overview، Doctor و CLI کامل
+- مستندات ۵ زبانه؛ انگلیسی زبان اصلی است
+
+## مشارکت
+
+برای افزودن mirror جدید، `mirrors_list.yaml` را با ساختار فعلی به‌روزرسانی کنید، روی سیستم خود تست بگیرید و Pull Request را به شاخهٔ `main` بفرستید. راهنمای کامل در [`CONTRIBUTING.md`](CONTRIBUTING.md) است.
+
+## 🔗 Project
+
+- Main repository: https://github.com/MiravaOrg/Mirava
+- Website: https://miravaorg.ir
+- X: https://x.com/miravaorg
+- Telegram: https://t.me/miravaorg
 
 ---
 
-## چطور یک میرور جدید به پروژه اضافه کنیم؟
-
-اگر یک میرور خوب سراغ داری، مخصوصاً داخل ایران و بدون نیاز به VPN خیلی خوشحال می‌شیم اون رو به لیست اضافه کنیم. این کار خیلی ساده‌ست:
-
-### مراحل:
-
-1. ریپازیتوری رو Fork کن
-2. فایل mirrors_list.yaml رو باز کن و اطلاعات میرور جدید رو اضافه کن
-3. اگه اسکریپتی برای همگام‌سازی داری (مثلاً با rsync یا wget)، بذارش داخل پوشه scripts/
-4. روی سیستم خودت تست بگیر
-5. بعدش یک Pull Request بفرست، من بررسی می‌کنم و اگه همه‌چی درست باشه، اضافه می‌شه.
-
-### چه جور میرورهایی به درد می‌خورن؟
-
-- هر چیزی که داخل ایران باشه و بدون فیلتر باز شه
-- مخازن لینوکس: Debian، Ubuntu، Arch و بقیه
-- رجیستری پایتون (PyPI)، NPM، Docker، GitHub Releases و …
-- خلاصه هر سرویسی که تو شرایط نت ملّی یا تحریم به دادمون برسه
-
-اگر فکر می‌کنی می‌تونی یه میرور معرفی کنی یا حتی خودت راه بندازی، خیلی خوشحال می‌شیم در این پروژه شریک شی.
-
----
-
-## 📢 شبکه‌های اجتماعی
-
-- 🔗 [توییتر من](https://x.com/geedook13)
-- 📣 [کانال تلگرام](https://t.me/shayangeedook)
-
----
-
-## ☕ حمایت مالی
-
-اگر از این پروژه خوشت اومده و دوست داری ازم حمایت کنی:
-
-[Coffee](https://www.coffeete.ir/geedook)
-
-با تشکر از حمایت‌هاتون!
-
----
-
-با تشکر از آرمان طاهری [ArmanTaheriGhaleTaki](https://github.com/ArmanTaheriGhaleTaki) بابت چندین لینک میرور
+بهبودهای optimizer چندتوزیعی Repository/DNS، منوی تعاملی و مستندات چندزبانه توسط [**Farshid Sar**](https://github.com/farshidsar).
