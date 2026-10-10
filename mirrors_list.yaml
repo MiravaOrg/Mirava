@@ -518,3 +518,17 @@ mirrors:
       - Fedora
       - FreeBSD
       - EPEL
+  - name: Famaserver
+    url: https://mirror.famaserver.com
+    description: Free public mirrors of major Linux distributions, served from the heart of Iran's network backbone — over HTTP, HTTPS, FTP and rsync.
+    packages:
+      - Ubuntu
+      - Ububtu CD images
+      - Debian
+      - Debian CD images
+      - AlmaLinux
+      - Kali
+      - ArchLinux
+      - Mint
+      - EPEL
+      - Parrot
