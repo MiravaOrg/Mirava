@@ -200,11 +200,6 @@ Mirava uses `check_mirrors.sh` for execution and `mirrors_list.yaml` for reposit
 
 ### Server and network overview
 
-The interactive menu starts with the official project link first, followed by the FarshidSar repository:
-
-- Official: `https://github.com/MiravaOrg/Mirava`
-- FarshidSar: `https://github.com/farshidsar/Mirava`
-
 Before the menu options, Mirava renders a short system table with only the useful at-a-glance fields: server name with RAM/uptime, operating system with architecture, public IP/location, current DNS servers, the active Linux package repository, and the Docker package repository. DNS/repository/Docker values are re-read from the current system configuration when the menu is drawn.
 
 Public IP/location lookup uses short timeouts and does not block the tool when unavailable. Set `MIRAVA_SKIP_NETINFO=1` to disable the external public-IP/location lookup. The same overview can be printed directly with `./check_mirrors.sh --system-info`.
@@ -281,8 +276,6 @@ chmod +x check_mirrors.sh
 ```
 
 The "fastest" result is specific to the current machine and network at test time and may change with routing, filtering, congestion, and mirror load.
-
-Cross-distribution repository/DNS optimizer and menu enhancements: **FarshidSar**.
 
 ---
 
