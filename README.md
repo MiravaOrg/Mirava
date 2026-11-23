@@ -324,4 +324,4 @@ Thanks for helping improve the project!
 
 ## 📢 Contact Info 
 
-Enhancements to the cross-distribution repository/DNS optimizer, interactive menu, and multilingual documentation by [**Farshid Sar**](https://github.com/farshidsar).
+We'll add the contact information for the Mirava team soon.
