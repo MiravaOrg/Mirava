@@ -95,6 +95,7 @@ This repository maintains an up-to-date list of trusted domestic mirrors for wid
 | [IranGit](https://scorpian.ir/) | A fast, modern, and powerful platform for searching, viewing, and downloading GitHub repositories with a professional, fully Persian user interface | GitHub Mirror |
 | [Asiatech](https://mirror.10.ir.cdn.ir/) | Repository docker-images-group | Docker Registry |
 | [Parmin](https://parmin.cloud/mirrors.html) | Maintained by Parmin | GitHub Mirror, Quay Registry, Docker Registry, GitLab Registry, NVIDIA Container Registry, Kubernetes Registry, Microsoft Registry, NPM, Go Proxy, Nuget, Composer, PyPI, Hugging Face |
+| [PaastaCloud](https://paasta.cloud/mirror) | From Code to Deployment Without Infrastructure Worries | PyPI, Go Modules, NPM, Maven Central, Ubuntu, Debian, Alpine |
 
 
 
